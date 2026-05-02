@@ -1,14 +1,14 @@
-// import Navbar from "@/components/Navbar"; // Assume you created this based on Step 2 guide
+
 // import Hero from "@/components/Hero";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
 import VentureProducts from "./components/VentureProducts";
-
+import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <main>
-      {/* <Navbar />
-      <Hero /> */}
+      <Navbar />
+      {/* <Hero /> */}
       <VentureProducts />
       <Team />
       <Contact />
