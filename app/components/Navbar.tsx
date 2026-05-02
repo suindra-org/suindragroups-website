@@ -31,7 +31,7 @@ export default function Navbar() {
         <Link href="/" className={`text-2xl font-black tracking-tighter transition-colors ${
           isScrolled ? "text-brand-dark" : "text-white"
         }`}>
-          SU INDRA <span className="text-brand-red">GROUPS</span>
+          <img src="/logo.png" alt="Su Indra Logo" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Links */}

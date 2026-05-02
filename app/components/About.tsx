@@ -27,7 +27,7 @@ export default function About() {
           </div>
           <div className="md:w-1/2 w-full aspect-square bg-white rounded-[3rem] shadow-2xl p-12 flex items-center justify-center border border-slate-100">
              {/* Replace with your high-res logo or illustration */}
-             <span className="text-brand-dark font-black text-7xl opacity-10">SU INDRA</span>
+             <img src="/indra_group_small1.png" alt="About Su Indra" className="w-full h-auto rounded-3xl shadow-2xl" />
           </div>
         </div>
       </section>

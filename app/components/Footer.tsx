@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Column 1: Brand & Mission */}
           <div className="space-y-6">
             <h3 className="text-2xl font-black tracking-tighter">
-              SU INDRA <span className="text-brand-red">GROUPS</span>
+            <img src="/logo image.png" alt="Logo" className="h-8 w-auto grayscale brightness-200" />
             </h3>
             <p className="text-slate-400 leading-relaxed text-sm">
               Architecting secure, scalable, and sustainable digital ecosystems. We drive business growth through strategic innovation and cybersecurity excellence in Nepal.

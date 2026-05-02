@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-brand-red/5 rounded-full blur-[100px]"></div>
         
         {/* Overlay texture */}
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]"></div>
+        <div className="absolute inset-0 bg-[url('/bg.jpg')] opacity-[0.03]"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10 text-center">
