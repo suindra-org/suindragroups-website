@@ -25,9 +25,38 @@ export const NAV_LINKS = [
       platform: "Mobile App"
     }
   ];
-  
-  export const TEAM_MEMBERS = [
-    { name: "Su Indra", role: "CEO & Founder", image: "/team-placeholder.jpg" },
-    { name: "Developer Name", role: "Lead Engineer", image: "/team-placeholder.jpg" },
-    // Add more team members here
+
+export const TEAM_MEMBERS = [
+    { 
+      name: "Gauri Shankar Sah", 
+      role: "CEO & Cyber Security Expert", 
+      education: "Computer Engineer",
+      image: "/", // Using your existing images from public folder
+      linkedin: "https://linkedin.com", 
+      portfolio: "https://portfolio.com" 
+    },
+    { 
+      name: "Ravi Pajiyar", 
+      role: "Technical Head & Full Stack Developer", 
+      education: "Computer Engineer",
+      image: "/", 
+      linkedin: "https://linkedin.com", 
+      portfolio: "https://portfolio.com" 
+    },
+    { 
+      name: "Mohit Shahi", 
+      role: "Full Stack Developer", 
+      education: "Software Engineer",
+      image: "/", 
+      linkedin: "https://linkedin.com", 
+      portfolio: "https://portfolio.com" 
+    },
+    { 
+      name: "Ashwani Chaudhary", 
+      role: "Junior Software Developer", 
+      education: "Computer Engineer",
+      image: "/", 
+      linkedin: "https://linkedin.com", 
+      portfolio: "https://portfolio.com" 
+    },
   ];
