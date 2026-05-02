@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Column 1: Brand (4 cols) */}
           <div className="lg:col-span-4 space-y-8">
             <Link href="/" className="inline-block">
-              <img src="/logo image.png" alt="Logo" className="h-10 w-auto brightness-200" />
+              <img src="/logo.png" alt="Logo" className="h-10 w-auto brightness-200" />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Architecting secure and sustainable digital ecosystems. We drive growth through engineering excellence and strategic venture management in Nepal.

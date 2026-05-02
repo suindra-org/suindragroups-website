@@ -28,14 +28,6 @@ export const NAV_LINKS = [
 
 export const TEAM_MEMBERS = [
     { 
-      name: "Gauri Shankar Sah", 
-      role: "CEO & Cyber Security Expert", 
-      education: "Computer Engineer",
-      image: "/", // Using your existing images from public folder
-      linkedin: "https://linkedin.com", 
-      portfolio: "https://portfolio.com" 
-    },
-    { 
       name: "Ravi Pajiyar", 
       role: "Technical Head & Full Stack Developer", 
       education: "Computer Engineer",
