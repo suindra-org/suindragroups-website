@@ -11,11 +11,11 @@ const config: Config = {
       colors: {
         brand: {
           red: '#e11d48', // Corporate Crimson
-          dark: '#1e293b', // Deep Slate
+          dark: '#0f172a', // Deep Navy/Slate
           gray: '#64748b',
-        },
-      },
-    },
+        }
+      }
+    }
   },
   plugins: [],
 };
