@@ -77,6 +77,16 @@ export default function VentureProducts() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
                     {item.products?.map((p) => (
                       <div key={p.name} className={`p-6 rounded-3xl border-2 transition-all ${p.status === 'Live' ? 'border-brand-red bg-white shadow-xl shadow-brand-red/5' : 'border-slate-200 bg-slate-100 opacity-60'}`}>
+                        <div className="flex justify-between items-center mb-4">
+  <img 
+    src={p.name === 'BuyNow' ? '/buynow.png' : '/sellnow.png'} 
+    alt={p.name} 
+    className="h-6 w-auto object-contain" 
+  />
+  <span className={`text-[9px] font-black uppercase px-2 py-1 rounded-md ${p.status === 'Live' ? 'bg-brand-red text-white' : 'bg-slate-300 text-slate-600'}`}>
+    {p.status}
+  </span>
+</div>
                         <div className="flex justify-between items-start mb-4">
                            <span className={`text-[10px] font-black uppercase px-2 py-1 rounded-md ${p.status === 'Live' ? 'bg-brand-red text-white' : 'bg-slate-300 text-slate-600'}`}>{p.status}</span>
                         </div>
@@ -87,7 +97,7 @@ export default function VentureProducts() {
                             Visit Site <ArrowRight size={16} className="group-hover/btn:translate-x-2 transition-transform" />
                           </Link>
                         ) : (
-                          <span className="text-xs font-bold text-slate-400">Launching 2025</span>
+                          <span className="text-xs font-bold text-slate-400">Launching 2026</span>
                         )}
                       </div>
                     ))}

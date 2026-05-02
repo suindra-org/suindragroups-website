@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer"; // Import the new component
 import Services from "./components/Services";
 import About from "./components/About";
+import Partners from "./components/Partners";
 export default function Home() {
   return (
     <main className="relative">
@@ -15,6 +16,7 @@ export default function Home() {
       <div id="ventures">
         <VentureProducts />
       </div>
+      <Partners/>
       <About />
       <Team />
       <Contact />

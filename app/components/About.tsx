@@ -32,7 +32,7 @@ export default function About() {
                 {/* Floating badge */}
                 <div className="absolute -right-6 -bottom-6 z-20 bg-brand-red text-white px-5 py-4 shadow-xl">
                   <p className="text-2xl font-black leading-none">Est.</p>
-                  <p className="text-3xl font-black leading-none">2024</p>
+                  <p className="text-3xl font-black leading-none">2025</p>
                 </div>
               </div>
             </div>

@@ -57,21 +57,29 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h4 className="text-xs font-black uppercase tracking-[0.2em] text-brand-red mb-8">Flagship Products</h4>
             <div className="space-y-4">
-              <Link href="https://buynow.suindragroups.com.np/" target="_blank" className="block p-5 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-brand-red/30 hover:bg-slate-800/80 transition-all group">
-                <div className="flex items-center justify-between mb-1">
-                  <span className="font-bold text-white group-hover:text-brand-red transition-colors">BuyNow</span>
-                  <span className="text-[9px] font-black bg-brand-red text-white px-2 py-0.5 rounded-md">LIVE</span>
-                </div>
-                <p className="text-[11px] text-slate-500 font-medium">Marketplace Ecosystem</p>
-              </Link>
+            <Link href="https://buynow.suindragroups.com.np/" target="_blank" className="block p-5 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-brand-red/30 hover:bg-slate-800/80 transition-all group">
+  <div className="flex items-center gap-4 mb-3">
+    {/* Real Logo in White Card */}
+    <div className="p-2 bg-white rounded-xl shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+      <img src="/buynow.png" alt="BuyNow" className="h-4 w-auto object-contain" />
+    </div>
+    <span className="text-[9px] font-black bg-brand-red text-white px-2 py-0.5 rounded-md">LIVE</span>
+  </div>
+  <span className="font-bold text-white group-hover:text-brand-red transition-colors block mb-1">BuyNow Official</span>
+  <p className="text-[11px] text-slate-500 font-medium tracking-tight">Multi-vendor Marketplace Ecosystem</p>
+</Link>
 
-              <div className="block p-5 rounded-3xl bg-slate-800/20 border border-white/5 opacity-50">
-                <div className="flex items-center justify-between mb-1">
-                  <span className="font-bold text-white">SellNow</span>
-                  <span className="text-[9px] font-black bg-slate-700 text-slate-400 px-2 py-0.5 rounded-md uppercase">Soon</span>
-                </div>
-                <p className="text-[11px] text-slate-500 font-medium">Vendor Solutions</p>
-              </div>
+<div className="block p-5 rounded-3xl bg-slate-800/20 border border-white/5 opacity-50 select-none grayscale">
+  <div className="flex items-center gap-4 mb-3">
+    {/* Real Logo in White Card (Faded) */}
+    <div className="p-2 bg-white rounded-xl shadow-sm">
+      <img src="/sellnow.png" alt="SellNow" className="h-4 w-auto object-contain" />
+    </div>
+    <span className="text-[9px] font-black bg-slate-700 text-slate-400 px-2 py-0.5 rounded-md uppercase">Soon</span>
+  </div>
+  <span className="font-bold text-white block mb-1">SellNow Vendor</span>
+  <p className="text-[11px] text-slate-500 font-medium tracking-tight">B2B Vendor Management Platform</p>
+</div>
             </div>
           </div>
 
