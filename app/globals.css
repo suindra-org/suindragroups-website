@@ -1,23 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Colors (F1Soft Style) */
+  /* Brand Colors */
   --color-brand-red: #e11d48;
   --color-brand-dark: #0f172a;
   --color-brand-gray: #64748b;
-
-  /* Keep the defaults */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Shared transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  scroll-behavior: smooth;
+}
+
+/* F1Soft style gradient for text */
+.text-gradient {
+  background: linear-gradient(90deg, #e11d48 0%, #fb7185 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
