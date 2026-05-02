@@ -20,23 +20,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: 'npm'
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
+        # REMOVED: static_site_generator: next (This was the bug!)
+
       - name: Install dependencies
         run: npm install
+
       - name: Build with Next.js
-        run: npm run build
+        run: npm run build # This will now respect your output: 'export' config
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./out # Next.js will now successfully create this folder
 
   deploy:
     environment:
