@@ -38,7 +38,7 @@ export const TEAM_MEMBERS = [
     { 
       name: "Mohit Shahi", 
       role: "Full Stack Developer", 
-      education: "Software Engineer",
+      education: "Computer Engineer",
       image: "/mohitprofile.jpeg", 
       linkedin: "https://linkedin.com", 
       portfolio: "https://portfolio.com" 
