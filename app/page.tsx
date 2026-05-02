@@ -1,21 +1,21 @@
-
-
-import Team from "./components/Team";
-import Contact from "./components/Contact";
-import VentureProducts from "./components/VentureProducts";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import VentureProducts from "./components/VentureProducts";
+import Team from "./components/Team";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer"; // Import the new component
+
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <Navbar />
       <Hero />
-      <VentureProducts />
+      <div id="ventures">
+        <VentureProducts />
+      </div>
       <Team />
       <Contact />
-      <footer className="py-10 bg-slate-900 text-white text-center text-sm border-t border-white/5">
-        <p>© 2025 Su Indra Groups Pvt. Ltd. | Technology • Security • Growth</p>
-      </footer>
+      <Footer /> {/* High-end Footer here */}
     </main>
   );
 }
