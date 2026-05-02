@@ -31,7 +31,7 @@ export const TEAM_MEMBERS = [
       name: "Ravi Pajiyar", 
       role: "Technical Head & Full Stack Developer", 
       education: "Computer Engineer",
-      image: "/", 
+      image: "/raviprofile.jpeg", 
       linkedin: "https://linkedin.com", 
       portfolio: "https://portfolio.com" 
     },
@@ -39,7 +39,7 @@ export const TEAM_MEMBERS = [
       name: "Mohit Shahi", 
       role: "Full Stack Developer", 
       education: "Software Engineer",
-      image: "/", 
+      image: "/mohitprofile.jpeg", 
       linkedin: "https://linkedin.com", 
       portfolio: "https://portfolio.com" 
     },
@@ -47,7 +47,7 @@ export const TEAM_MEMBERS = [
       name: "Ashwani Chaudhary", 
       role: "Junior Software Developer", 
       education: "Computer Engineer",
-      image: "/", 
+      image: "/ashwaniprofile.png", 
       linkedin: "https://linkedin.com", 
       portfolio: "https://portfolio.com" 
     },
