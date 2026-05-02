@@ -6,14 +6,14 @@ const ventures = [
   {
     title: "Digital Platforms",
     subtitle: "Web & Application Ventures",
-    desc: "We build enterprise-grade digital platforms designed to support high-scale operational requirements.",
+    desc: "We build enterprise-grade digital platforms designed to support high-scale operational requirements and seamless user experiences.",
     image: "/Portfolio-Website.webp",
     icon: <Globe className="text-brand-red" size={24} />
   },
   {
     title: "E-Commerce Ecosystem",
     subtitle: "Online Business Enablement",
-    desc: "Revolutionizing digital trade in Nepal through our flagship e-commerce platforms.",
+    desc: "Revolutionizing digital trade in Nepal through our flagship e-commerce platforms designed for scale and security.",
     image: "/E-Commerece.jpg",
     isProductSection: true,
     products: [
@@ -24,7 +24,7 @@ const ventures = [
   {
     title: "Cybersecurity Initiatives",
     subtitle: "Digital Risk & Protection",
-    desc: "Strengthening digital trust through robust architecture and advanced threat protection.",
+    desc: "Strengthening digital trust through robust architecture and advanced threat protection across all business verticals.",
     image: "/security.jpg",
     icon: <Shield className="text-brand-red" size={24} />
   }
@@ -37,7 +37,7 @@ export default function VentureProducts() {
         
         {/* Section Header */}
         <div className="mb-20">
-          <h4 className="text-brand-red font-bold uppercase tracking-[0.3em] text-xs mb-3">Our Portfolios</h4>
+          <h4 className="text-brand-red font-bold uppercase tracking-[0.3em] text-[10px] mb-3 px-1">Our Portfolios</h4>
           <h2 className="text-4xl md:text-6xl font-black text-brand-dark tracking-tighter">Business <span className="text-brand-red italic">Ventures</span></h2>
         </div>
 
@@ -45,7 +45,7 @@ export default function VentureProducts() {
           {ventures.map((item, index) => (
             <div 
               key={item.title} 
-              className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
+              className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-24 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
             >
               {/* Image Side with "Float" effect */}
               <div className="w-full lg:w-1/2 group relative">
@@ -66,46 +66,41 @@ export default function VentureProducts() {
                    <div className="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center border border-slate-100">
                      {item.icon || <Smartphone className="text-brand-red" size={24} />}
                    </div>
-                   <p className="text-brand-red font-bold uppercase tracking-widest text-xs">{item.subtitle}</p>
+                   <p className="text-brand-red font-bold uppercase tracking-widest text-[10px]">{item.subtitle}</p>
                 </div>
                 
                 <h3 className="text-4xl md:text-5xl font-black text-brand-dark tracking-tight leading-tight">{item.title}</h3>
                 <p className="text-brand-gray text-lg leading-relaxed max-w-lg">{item.desc}</p>
 
                 {/* SPECIAL HIGHLIGHT: E-Commerce Product Cards */}
-                {item.isProductSection ? (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+                {item.isProductSection && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
                     {item.products?.map((p) => (
-                      <div key={p.name} className={`p-6 rounded-3xl border-2 transition-all ${p.status === 'Live' ? 'border-brand-red bg-white shadow-xl shadow-brand-red/5' : 'border-slate-200 bg-slate-100 opacity-60'}`}>
-                        <div className="flex justify-between items-center mb-4">
-  <img 
-    src={p.name === 'BuyNow' ? '/buynow.png' : '/sellnow.png'} 
-    alt={p.name} 
-    className="h-6 w-auto object-contain" 
-  />
-  <span className={`text-[9px] font-black uppercase px-2 py-1 rounded-md ${p.status === 'Live' ? 'bg-brand-red text-white' : 'bg-slate-300 text-slate-600'}`}>
-    {p.status}
-  </span>
-</div>
-                        <div className="flex justify-between items-start mb-4">
-                           <span className={`text-[10px] font-black uppercase px-2 py-1 rounded-md ${p.status === 'Live' ? 'bg-brand-red text-white' : 'bg-slate-300 text-slate-600'}`}>{p.status}</span>
+                      <div key={p.name} className={`p-6 rounded-[2rem] border-2 transition-all duration-500 ${p.status === 'Live' ? 'border-brand-red/20 bg-white shadow-xl shadow-brand-red/5 hover:border-brand-red' : 'border-slate-200 bg-slate-100 opacity-60'}`}>
+                        <div className="flex justify-between items-center mb-6">
+                          <img 
+                            src={p.name === 'BuyNow' ? '/buynow.png' : '/sellnow.png'} 
+                            alt={p.name} 
+                            className="h-7 w-auto object-contain" 
+                          />
+                          <span className={`text-[8px] font-black uppercase px-2 py-1 rounded-md tracking-widest ${p.status === 'Live' ? 'bg-brand-red text-white shadow-lg shadow-brand-red/20' : 'bg-slate-300 text-slate-600'}`}>
+                            {p.status}
+                          </span>
                         </div>
-                        <h5 className="text-xl font-bold text-brand-dark">{p.name}</h5>
-                        <p className="text-xs text-brand-gray mb-6">{p.desc}</p>
+                        
+                        <h5 className="text-xl font-bold text-brand-dark mb-1">{p.name}</h5>
+                        <p className="text-[11px] text-brand-gray mb-6 font-medium uppercase tracking-wider">{p.desc}</p>
+                        
                         {p.status === 'Live' ? (
-                          <Link href={p.link} className="inline-flex items-center gap-2 text-brand-red font-black text-sm group/btn">
-                            Visit Site <ArrowRight size={16} className="group-hover/btn:translate-x-2 transition-transform" />
+                          <Link href={p.link} className="inline-flex items-center gap-2 text-brand-red font-black text-xs uppercase tracking-widest group/btn">
+                            Visit Site <ArrowRight size={14} className="group-hover/btn:translate-x-2 transition-transform" />
                           </Link>
                         ) : (
-                          <span className="text-xs font-bold text-slate-400">Launching 2026</span>
+                          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Available 2026</span>
                         )}
                       </div>
                     ))}
                   </div>
-                ) : (
-                  <button className="flex items-center gap-2 font-bold text-brand-dark hover:text-brand-red transition-colors group">
-                    View Project Case Study <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
-                  </button>
                 )}
               </div>
             </div>
