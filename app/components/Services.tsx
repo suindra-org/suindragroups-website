@@ -73,9 +73,9 @@ export default function Services() {
                 </p>
               </div>
 
-              <div className="flex items-center gap-2 text-brand-red font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+              {/* <div className="flex items-center gap-2 text-brand-red font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
                 Learn More <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform" />
-              </div>
+              </div> */}
 
               {/* Bottom Decorative Bar */}
               <div className="absolute bottom-0 left-0 w-0 h-1.5 bg-brand-red group-hover:w-full transition-all duration-700"></div>
