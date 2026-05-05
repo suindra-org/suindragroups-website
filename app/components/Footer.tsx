@@ -96,7 +96,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <div className="w-9 h-9 md:w-10 md:h-10 bg-slate-800/50 rounded-xl flex items-center justify-center text-brand-red border border-white/5 shrink-0"><Mail size={18} /></div>
-                <span className="font-bold text-white text-xs md:text-sm break-all">info@suindragroups.com.np</span>
+                <span className="font-bold text-white text-xs md:text-sm break-all">support@suindragroups.com.np</span>
               </li>
             </ul>
           </div>
