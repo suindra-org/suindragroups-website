@@ -48,7 +48,7 @@ export default function About() {
 
             <div className="space-y-5 text-slate-600 leading-relaxed text-sm md:text-base">
             <p>
-                Su Indra Groups Pvt. Ltd. is a legally registered <span className="font-bold text-brand-dark tracking-tight">private limited company</span> (Registration No. 381843) headquartered in Janakpur, Dhanusha, Nepal.
+                Su Indra Groups Pvt. Ltd. is a legally registered <span className="font-bold text-brand-dark tracking-tight">private limited company (Registration No. 381843) </span> headquartered in Janakpur, Dhanusha, Nepal.
               </p>
 
               <p>
