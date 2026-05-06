@@ -14,13 +14,9 @@ export default function About() {
           {/* Left Side: Image with offset frame */}
           <div className="w-full lg:w-1/2 flex justify-center px-4 md:px-0">
             <div className="relative group">
-              {/* Decorative background blocks */}
               <div className="absolute -left-4 -bottom-4 md:-left-6 md:-bottom-6 w-32 h-32 md:w-48 md:h-48 bg-brand-red/10 -z-10"></div>
-
-              {/* Crimson offset frame */}
               <div className="absolute -left-4 top-4 md:-left-8 md:top-8 w-full h-full border-[4px] md:border-[6px] border-brand-red -z-10 transition-all duration-500 group-hover:-left-2 group-hover:top-2 md:group-hover:-left-4 md:group-hover:top-4"></div>
 
-              {/* Image Container */}
               <div className="relative z-10 border-[6px] md:border-[8px] border-white shadow-2xl">
                 <img
                   src="/indra_group_small1.png"
@@ -29,8 +25,7 @@ export default function About() {
                 />
               </div>
 
-              {/* Floating Est. Badge */}
-              <div className="absolute -right-4 -bottom-4 md:-right-6 md:-bottom-6 z-20 bg-brand-red text-white px-4 py-3 md:px-5 md:py-4 shadow-xl">
+              <div className="absolute -right-4 -bottom-4 md:-right-6 md:-bottom-6 z-20 bg-brand-red text-white px-4 py-3 md:px-5 md:py-4 shadow-xl text-center">
                 <p className="text-lg md:text-2xl font-black leading-none uppercase tracking-tighter">Est.</p>
                 <p className="text-xl md:text-3xl font-black leading-none">2025</p>
               </div>
@@ -39,7 +34,7 @@ export default function About() {
 
           {/* Right Side: Content */}
           <div className="w-full lg:w-1/2 space-y-6 md:space-y-8">
-            <div className="space-y-2">
+            <div className="space-y-2 text-center lg:text-left">
               <h2 className="text-4xl md:text-6xl font-light tracking-widest uppercase text-brand-dark leading-tight">
                 ABOUT <br/>
                 <span className="text-brand-red font-black">COMPANY</span>
@@ -49,56 +44,61 @@ export default function About() {
               </h3>
             </div>
 
-            <div className="w-16 h-1 bg-brand-red rounded-full"></div>
+            <div className="w-16 h-1 bg-brand-red rounded-full mx-auto lg:mx-0"></div>
 
-            <div className="space-y-4">
-              <p className="text-slate-600 leading-relaxed text-sm md:text-base">
-                Su Indra Groups Pvt. Ltd. is a legally registered private limited company 
-                <span className="font-bold text-brand-dark"> (Registration No. 381843)</span> headquartered in 
-                Janakpur, Dhanusha, Nepal.
+            <div className="space-y-5 text-slate-600 leading-relaxed text-sm md:text-base">
+            <p>
+                Su Indra Groups Pvt. Ltd. is a legally registered <span className="font-bold text-brand-dark tracking-tight">private limited company</span> (Registration No. 381843) headquartered in Janakpur, Dhanusha, Nepal.
               </p>
 
-              <p className="text-slate-600 leading-relaxed text-sm md:text-base">
+              <p>
+                It is also registered under the <span className="font-semibold text-brand-dark">Department of Cottage & Small Industries</span>, Janakpur, Dhanusha 
+                <span className="font-bold text-brand-dark"> (Industry Registration No. 19767/610/2082/083)</span>, with a focus on providing e-commerce platforms-
+                <span className="text-brand-red font-bold italic"> “buynow.”</span> and 
+                <span className="text-brand-red font-bold italic"> “sellnow.”</span> for online buying and selling of goods and services.
+              </p>
+
+              <p>
                 The company operates through strategic partnerships and project-based ventures across 
                 web development, e-commerce, and cybersecurity sectors, delivering innovative and secure 
                 digital solutions. Our mission is to build scalable, reliable, and future-ready digital 
                 ecosystems that empower businesses and individuals.
               </p>
 
-              <p className="text-slate-600 leading-relaxed text-sm md:text-base italic">
+              <p className="italic font-medium border-l-2 border-brand-red pl-4">
                 With a growing portfolio of ventures, Su Indra Groups is committed to maintaining high 
                 standards of technology, security, and customer trust.
               </p>
             </div>
 
-            {/* Company Highlights Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 pt-4">
+            {/* Company Highlights Grid - 2 columns */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 pt-4">
               <div className="border-l-4 border-brand-red pl-5">
-                <p className="text-2xl md:text-3xl font-black text-brand-dark leading-none">381843</p>
-                <p className="text-[10px] font-bold text-brand-red uppercase tracking-widest mt-2">Registration Number</p>
+                <p className="text-xl md:text-2xl font-black text-brand-dark leading-none">381843</p>
+                <p className="text-[9px] font-bold text-brand-red uppercase tracking-widest mt-2">Company Registration Number</p>
               </div>
               
               <div className="border-l-4 border-brand-red pl-5">
-                <p className="text-2xl md:text-3xl font-black text-brand-dark leading-none">623511602</p>
-                <p className="text-[10px] font-bold text-brand-red uppercase tracking-widest mt-2">VAT Registration Number</p>
+                <p className="text-xl md:text-2xl font-black text-brand-dark leading-none">623511602</p>
+                <p className="text-[9px] font-bold text-brand-red uppercase tracking-widest mt-2">VAT Registration Number</p>
               </div>
 
               <div className="border-l-4 border-slate-200 pl-5">
-                <p className="text-lg md:text-xl font-black text-brand-dark leading-tight uppercase">Janakpur, Dhanusha</p>
-                <p className="text-[10px] font-bold text-brand-red uppercase tracking-widest mt-2">Head Office Location</p>
+                <p className="text-sm md:text-base font-black text-brand-dark leading-tight uppercase">19767/610/2082/083</p>
+                <p className="text-[9px] font-bold text-brand-red uppercase tracking-widest mt-2">Industry Registration Number</p>
               </div>
 
               <div className="border-l-4 border-slate-200 pl-5">
-                <p className="text-2xl md:text-3xl font-black text-brand-dark leading-none">3+ Ventures</p>
-                <p className="text-[10px] font-bold text-brand-red uppercase tracking-widest mt-2">Active Business Projects</p>
+                <p className="text-sm md:text-base font-black text-brand-dark leading-tight uppercase">Janakpur, Dhanusha, Nepal</p>
+                <p className="text-[9px] font-bold text-brand-red uppercase tracking-widest mt-2">Head Office Location</p>
               </div>
             </div>
 
             {/* CTA Button */}
-            <div className="pt-6">
+            <div className="pt-6 text-center lg:text-left">
               <a
                 href="#services"
-                className="flex sm:inline-flex items-center justify-center gap-3 bg-brand-dark text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-brand-red transition-all duration-300 shadow-xl group"
+                className="inline-flex items-center justify-center gap-3 bg-brand-dark text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-brand-red transition-all duration-300 shadow-xl group"
               >
                 Our Services
                 <span className="text-brand-red text-xl leading-none group-hover:translate-x-2 transition-transform">→</span>

@@ -26,7 +26,7 @@ export default function Footer() {
               <img src="/logo.png" alt="Logo" className="h-8 md:h-10 w-auto brightness-200" />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Architecting secure and sustainable digital ecosystems. We drive growth through engineering excellence and strategic venture management in Nepal.
+            Su Indra Groups Pvt. Ltd. is registered under the Department of Cottage & Small Industries, Janakpur, Dhanusha (Industry Registration No. 19767/610/2082/083), with a focus on providing e-commerce platforms “buynow.” and “sellnow.” for online buying and selling of goods and services.
             </p>
             <div className="flex flex-wrap gap-4">
               {/* Updated Social Links */}
@@ -38,7 +38,7 @@ export default function Footer() {
               </a>
               <div className="flex items-center gap-2 px-3 md:px-4 py-2 bg-slate-800/50 border border-white/10 rounded-2xl">
                  <ShieldCheck size={14} className="text-brand-red" />
-                 <span className="text-[9px] md:text-[10px] font-bold text-slate-300 uppercase tracking-widest">Reg: 381843</span>
+                 <span className="text-[9px] md:text-[10px] font-bold text-slate-300 uppercase tracking-widest">Industry Registration No: 19767/610/2082/083</span>
               </div>
             </div>
           </div>
@@ -84,11 +84,11 @@ export default function Footer() {
 
           {/* Column 4: Reach Out */}
           <div className="lg:col-span-3">
-            <h4 className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-brand-red mb-6 md:mb-8">Reach Out</h4>
+            <h4 className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-brand-red mb-6 md:mb-8">Customer Support</h4>
             <ul className="space-y-4 md:space-y-6 text-slate-400 text-sm">
               <li className="flex items-start gap-4">
                 <div className="w-9 h-9 md:w-10 md:h-10 bg-slate-800/50 rounded-xl flex items-center justify-center text-brand-red border border-white/5 shrink-0"><MapPin size={18} /></div>
-                <span className="leading-relaxed font-medium text-xs md:text-sm pt-1">Janakpur, Dhanusha,<br/><span className="text-[10px] md:text-xs text-white uppercase tracking-widest font-bold">Nepal Office</span></span>
+                <span className="leading-relaxed font-medium text-xs md:text-sm pt-1">Janakpur-09, Dhanusha<br/><span className="text-[10px] md:text-xs text-white uppercase tracking-widest font-bold">Nepal</span></span>
               </li>
               <li className="flex items-center gap-4">
                 <div className="w-9 h-9 md:w-10 md:h-10 bg-slate-800/50 rounded-xl flex items-center justify-center text-brand-red border border-white/5 shrink-0"><Phone size={18} /></div>

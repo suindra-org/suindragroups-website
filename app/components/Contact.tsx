@@ -52,11 +52,15 @@ export default function Contact() {
               <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
               
               <div className="relative z-10">
-                <h3 className="text-3xl font-bold mb-6">Corporate Information</h3>
-                <p className="text-slate-400 mb-12 leading-relaxed">
-                  Our mission is to architect secure, scalable, and sustainable digital ecosystems. 
-                  Reach out for ventures, partnerships, or cybersecurity consultation.
-                </p>
+              <h3 className="text-3xl font-bold mb-6 leading-tight">Complaints & Grievance Redressal</h3>
+                <div className="space-y-5 mb-12">
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    Su Indra Groups Pvt. Ltd. is committed to maintaining transparency, accountability, and customer satisfaction. If you have any complaints, concerns, or feedback regarding our services, we encourage you to reach out to us through the following channels.
+                  </p>
+                  <p className="text-slate-400 text-xs leading-relaxed italic border-l-2 border-brand-red pl-4">
+                    All complaints are reviewed and addressed in a timely and professional manner in accordance with our internal policies and applicable regulations.
+                  </p>
+                </div>
                 
                 <div className="space-y-8">
                   <div className="flex items-start gap-5 group">
@@ -74,8 +78,8 @@ export default function Contact() {
                       <Mail size={24} />
                     </div>
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-brand-red mb-1">Official Email</p>
-                      <p className="text-sm font-medium text-slate-200">info@suindragroups.com.np</p>
+                    <p className="text-xs font-bold uppercase tracking-widest text-brand-red mb-1">Support Email</p>
+                    <p className="text-sm font-medium text-slate-200">support@suindragroups.com.np</p>
                     </div>
                   </div>
 
