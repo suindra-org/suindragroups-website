@@ -23,15 +23,16 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed w-full z-[100] transition-all duration-500 ${
-      isScrolled ? "bg-white shadow-lg py-3" : "bg-transparent py-6"
+    <nav className={`fixed w-full z-[100] transition-all duration-300 bg-white shadow-md ${
+      isScrolled ? "py-2" : "py-4"
     }`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className={`text-2xl font-black tracking-tighter transition-colors ${
-          isScrolled ? "text-brand-dark" : "text-white"
-        }`}>
-          <img src="/logo.png" alt="Su Indra Logo" className="h-12 w-auto" />
+        <Link href="/" className="transition-transform hover:scale-105">
+          {/* Size increased from h-12 to h-16 (mobile) and h-20 (desktop) */}
+         {/* Increased height to h-24 on mobile and h-32 on desktop to show tiny text details */}
+{/* Balanced height: h-12 on mobile, h-16 on desktop. Removed py-2 to stop stretching. */}
+<img src="/logo.png" alt="Su Indra Logo" className="h-13 md:h-16 w-auto object-contain" />
         </Link>
 
         {/* Desktop Links */}
@@ -40,9 +41,7 @@ export default function Navbar() {
             <Link 
               key={link.name} 
               href={link.href}
-              className={`text-sm font-bold uppercase tracking-widest transition-colors hover:text-brand-red ${
-                isScrolled ? "text-brand-dark" : "text-white"
-              }`}
+              className="text-sm font-bold uppercase tracking-widest transition-colors text-brand-dark hover:text-brand-red"
             >
               {link.name}
             </Link>
@@ -61,9 +60,9 @@ export default function Navbar() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
-            <X className={isScrolled ? "text-brand-dark" : "text-white"} size={30} />
+            <X className="text-brand-dark" size={35} />
           ) : (
-            <Menu className={isScrolled ? "text-brand-dark" : "text-white"} size={30} />
+            <Menu className="text-brand-dark" size={35} />
           )}
         </button>
       </div>
