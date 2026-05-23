@@ -27,6 +27,9 @@ export default function Navbar() {
       className={`fixed w-full z-[100] transition-all duration-500 ${
         isScrolled ? "bg-white shadow-lg py-4" : "bg-transparent py-8"
       }`}
+      style={{
+        background: isScrolled ? "white" : "linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f172a 100%)"
+      }}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo - Enlarged */}

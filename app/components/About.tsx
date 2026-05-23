@@ -63,7 +63,7 @@ export default function About() {
             </div>
 
             {/* Company Details - Exact Copy Paste in Professional Layout */}
-            {/* <div className="bg-slate-50 p-6 md:p-10 rounded-[2.5rem] border border-slate-100 shadow-sm">
+            <div className="bg-slate-50 p-6 md:p-10 rounded-[2.5rem] border border-slate-100 shadow-sm">
               <h4 className="text-xs font-black uppercase tracking-[0.2em] text-brand-dark mb-8 flex items-center gap-3">
                 <span className="w-2 h-2 bg-brand-red rounded-full"></span>
                 Company Details
@@ -92,6 +92,18 @@ export default function About() {
                 </li>
                 <li className="flex items-start gap-3 border-b border-slate-200 pb-3">
                   <span className="text-brand-red font-bold mt-1">•</span>
+                  <p className="text-sm text-slate-600"><strong className="text-brand-dark">Department:</strong>  Department of Commerce, Supplies and Consumer Protection</p>
+                </li>
+                <li className="flex items-start gap-3 border-b border-slate-200 pb-3">
+                  <span className="text-brand-red font-bold mt-1">•</span>
+                  <p className="text-sm text-slate-600"><strong className="text-brand-dark">Ref. No.:</strong> 2082/083</p>
+                </li>
+                <li className="flex items-start gap-3 border-b border-slate-200 pb-3">
+                  <span className="text-brand-red font-bold mt-1">•</span>
+                  <p className="text-sm text-slate-600"><strong className="text-brand-dark">Registration / Listing No:</strong> 001-318</p>
+                </li>
+                <li className="flex items-start gap-3 border-b border-slate-200 pb-3">
+                  <span className="text-brand-red font-bold mt-1">•</span>
                   <p className="text-sm text-slate-600"><strong className="text-brand-dark">PAN/VAT Number:</strong> 623511602</p>
                 </li>
                 <li className="flex items-start gap-3 border-b border-slate-200 pb-3">
@@ -102,16 +114,16 @@ export default function About() {
                   <span className="text-brand-red font-bold mt-1">•</span>
                   <p className="text-sm text-slate-600"><strong className="text-brand-dark">Head Office Location:</strong> Janakpur, Dhanusha, Nepal</p>
                 </li>
-                <li className="flex items-start gap-3 border-b border-slate-200 pb-3">
+                {/* <li className="flex items-start gap-3 border-b border-slate-200 pb-3">
                   <span className="text-brand-red font-bold mt-1">•</span>
                   <p className="text-sm text-slate-600"><strong className="text-brand-dark">Grievance Handling Contact Person:</strong> Gauri Shankar Sah</p>
-                </li>
+                </li> */}
                 <li className="flex items-start gap-3">
                   <span className="text-brand-red font-bold mt-1">•</span>
                   <p className="text-sm text-slate-600"><strong className="text-brand-dark">Contact Number for Complaints & Support:</strong> +977 9844129557</p>
                 </li>
               </ul>
-            </div> */}
+            </div>
 
             {/* Our Mission - Exact Copy Paste */}
             <div className="bg-brand-dark p-8 md:p-10 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden group">
