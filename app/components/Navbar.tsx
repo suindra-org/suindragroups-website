@@ -32,7 +32,6 @@ export default function Navbar() {
       }}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Logo - Enlarged */}
         <Link href="/" className="flex-shrink-0">
           <img
             src="/logo.png"
