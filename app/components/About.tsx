@@ -125,7 +125,6 @@ export default function About() {
               </ul>
             </div>
 
-            {/* Our Mission - Exact Copy Paste */}
             <div className="bg-brand-dark p-8 md:p-10 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden group">
                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red opacity-10 blur-3xl -mr-16 -mt-16 group-hover:opacity-20 transition-opacity"></div>
                <h4 className="text-brand-red font-bold uppercase tracking-[0.2em] text-[10px] mb-4 uppercase">Our Mission</h4>
