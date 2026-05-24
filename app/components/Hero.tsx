@@ -17,13 +17,13 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-12 md:py-0"
+      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden px-4 pt-32 md:pt-20 lg:pt-0"
       style={{
         background: "linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f172a 100%)"
       }}
     >
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center min-h-screen">
           
           {/* LEFT SIDE - IMAGE & HEADER */}
           <motion.div
