@@ -17,120 +17,120 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-white"
+      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden px-4 pt-24 md:pt-16 lg:pt-8"
+      style={{
+        background: "white"
+      }}
     >
-      {/* Top padding spacer — accounts for fixed navbar across all breakpoints */}
-      <div className="w-full py-16 sm:py-18 md:py-20 lg:py-12 xl:py-8 px-4 sm:px-6 md:px-8">
-        <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 xl:gap-16 items-center justify-between">
-
-            {/* LEFT — Image + Heading */}
-            <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-              className="w-full lg:w-1/2 flex flex-col items-start"
-            >
-              {/* Heading — visible above image */}
-              <div className="mb-4 sm:mb-5">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                  Democratizing
-                  <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
-                    Possibilities
-                  </span>
-                </h1>
-              </div>
-
-              {/* Image */}
-              <div className="relative w-full">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-100/40 to-red-50/30 rounded-2xl blur-2xl" />
-                <img
-                  src="/bannersuindra.png"
-                  alt="Su Indra Cover"
-                  className="relative z-10 w-full h-auto rounded-xl md:rounded-2xl drop-shadow-xl object-cover"
-                  style={{ maxHeight: "420px", objectFit: "cover" }}
-                />
-                <div className="absolute -bottom-6 -right-6 w-36 h-36 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl opacity-10 blur-3xl pointer-events-none" />
-              </div>
-            </motion.div>
-
-            {/* RIGHT — Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.15 }}
-              className="w-full lg:w-1/2 flex flex-col justify-center"
-            >
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 mb-3 sm:mb-4 px-3 sm:px-4 py-1.5 bg-red-100 rounded-full border border-red-200 self-start">
-                <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-red-600 whitespace-nowrap">
-                  Innovation & Vision
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+          
+          {/* LEFT SIDE - IMAGE & HEADER */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="order-1 lg:order-1 flex flex-col justify-center"
+          >
+            {/* Header Text - Above Image */}
+            <div className="mb-4 md:mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight">
+                Democratizing
+                <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
+                  Possibilities
                 </span>
-              </div>
+              </h2>
+            </div>
 
-              {/* Description */}
-              <p className="text-sm sm:text-base lg:text-sm xl:text-lg text-slate-700 mb-4 sm:mb-5 leading-relaxed font-medium max-w-xl">
-                Su Indra Groups is pioneering a unified digital ecosystem that connects
-                buyers and sellers globally. Rooted in heritage, built for the future.
-              </p>
+            {/* Image Container */}
+            <div className="relative w-full max-w-2xl">
+              {/* Decorative background circle */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-100/40 to-red-50/30 rounded-xl md:rounded-2xl blur-2xl" />
+              
+              {/* Main Image */}
+              <img
+                src="/bannersuindra.png"
+                alt="Su Indra Cover"
+                className="relative z-10 w-full h-auto drop-shadow-lg md:drop-shadow-2xl rounded-xl md:rounded-2xl"
+              />
+              
+              {/* Floating accent element */}
+              <div className="absolute -bottom-6 md:-bottom-8 -right-6 md:-right-8 w-32 md:w-48 h-32 md:h-48 bg-gradient-to-br from-red-500 to-red-600 rounded-xl md:rounded-2xl opacity-15 blur-3xl" />
+            </div>
+          </motion.div>
 
-              {/* Features */}
-              <div className="space-y-2 sm:space-y-3 mb-5 sm:mb-7">
-                {features.map((feature, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -16 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.45, delay: 0.35 + index * 0.1 }}
-                    className="flex items-start gap-2"
-                  >
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-xs sm:text-sm xl:text-base text-slate-800 font-medium leading-snug">
-                      {feature}
-                    </span>
-                  </motion.div>
-                ))}
-              </div>
+          {/* RIGHT SIDE - CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="order-2 lg:order-2"
+          >
+            {/* Subheading Badge */}
+            <div className="inline-flex items-center gap-2 mb-3 md:mb-4 px-3 md:px-4 py-1.5 md:py-2 bg-red-100 rounded-full border border-red-200">
+              <div className="w-1.5 md:w-2 h-1.5 md:h-2 bg-red-600 rounded-full animate-pulse" />
+              <span className="text-xs md:text-sm font-semibold text-red-600">Innovation & Vision</span>
+            </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col xs:flex-row gap-2 sm:gap-3">
-                <Link
-                  href="#ventures"
-                  className="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-red-600 to-red-500 text-white font-black text-xs sm:text-sm rounded-lg sm:rounded-xl shadow-lg shadow-red-200 hover:shadow-red-300 transition-all hover:scale-[1.03] border border-red-400/30 whitespace-nowrap"
+            {/* Description */}
+            <p className="text-sm md:text-base lg:text-lg text-slate-700 mb-4 md:mb-6 leading-relaxed max-w-xl font-medium">
+              Su Indra Groups is pioneering a unified digital ecosystem that connects 
+              buyers and sellers globally. Rooted in heritage, built for the future.
+            </p>
+
+            {/* Features List */}
+            <div className="space-y-2 md:space-y-3 mb-6 md:mb-8">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                  className="flex items-start gap-2 md:gap-2.5"
                 >
-                  Explore Portfolio
-                  <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
+                  <CheckCircle2 className="w-4 md:w-5 h-4 md:h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-xs md:text-sm lg:text-base text-slate-800 font-medium">{feature}</span>
+                </motion.div>
+              ))}
+            </div>
 
-                <Link
-                  href="#contact"
-                  className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 border-2 border-slate-300 text-slate-900 font-bold text-xs sm:text-sm rounded-lg sm:rounded-xl hover:border-red-500 hover:bg-red-50 transition-all whitespace-nowrap"
-                >
-                  Get in Touch
-                </Link>
-              </div>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-2 md:gap-3 pt-2 md:pt-3">
+              <Link
+                href="#ventures"
+                className="group relative inline-flex items-center justify-center gap-2 px-5 md:px-7 py-2.5 md:py-3 bg-gradient-to-r from-red-600 to-red-500 text-white font-black text-xs md:text-sm lg:text-base rounded-lg md:rounded-xl shadow-[0_10px_30px_rgba(220,38,38,0.3)] hover:shadow-[0_15px_40px_rgba(220,38,38,0.5)] transition-all hover:scale-105 backdrop-blur-sm border border-red-400/30"
+              >
+                Explore Portfolio
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
 
-              {/* Trust Indicators */}
-              <div className="flex items-center gap-3 sm:gap-4 mt-5 sm:mt-7 pt-4 sm:pt-5 border-t border-slate-200">
-                <div>
-                  <div className="font-bold text-slate-900 text-xs sm:text-sm">Trusted by</div>
-                  <div className="text-slate-500 text-xs">Global enterprises</div>
-                </div>
-                <div className="w-px h-8 bg-slate-200" />
-                <div>
-                  <div className="font-bold text-slate-900 text-xs sm:text-sm">Est.</div>
-                  <div className="text-slate-500 text-xs">Heritage & Future</div>
-                </div>
+              <Link
+                href="#contact"
+                className="inline-flex items-center justify-center px-5 md:px-7 py-2.5 md:py-3 border-2 border-slate-400 text-slate-900 font-bold text-xs md:text-sm lg:text-base rounded-lg md:rounded-xl hover:border-red-600 hover:bg-red-50 transition-all"
+              >
+                Get in Touch
+              </Link>
+            </div>
+
+            {/* Trust indicators */}
+            <div className="flex items-center gap-3 md:gap-4 mt-6 md:mt-8 pt-4 md:pt-6 border-t border-slate-300">
+              <div className="text-xs md:text-sm">
+                <div className="font-bold text-slate-900">Trusted by</div>
+                <div className="text-slate-600 text-xs">Global enterprises</div>
               </div>
-            </motion.div>
-          </div>
+              <div className="w-px h-8 md:h-10 bg-slate-300" />
+              <div className="text-xs md:text-sm">
+                <div className="font-bold text-slate-900">Est.</div>
+                <div className="text-slate-600 text-xs">Heritage & Future</div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
 
-      {/* Bottom accent */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-red-600 via-red-400 to-transparent" />
+      {/* Bottom accent line */}
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-red-600 via-red-500 to-transparent" />
     </section>
   );
 }
